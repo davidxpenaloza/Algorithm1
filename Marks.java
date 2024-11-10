@@ -15,11 +15,11 @@ public class Marks
      */
     public static void main(String[] args)
     {
-        int numberOfStudents = 10;
+        int numberOfStudents = 30;
         float[] mark = new float[numberOfStudents];
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Give marks to 10 students");
+        System.out.println("Give marks to 30 students");
         
         //assignment name
         System.out.println("Enter the assignment name: ");
@@ -36,11 +36,11 @@ public class Marks
 
             do{
                 temp = scanner.nextFloat();
-                if(temp<0 || temp>10){
+                if(temp<0 || temp>30){
                    
                     System.out.println("Invalide marks,please enter again");    
                 }
-                } while (temp<0 || temp>10);
+                } while (temp<0 || temp>30);
                 mark[i] = temp;
             
             }
